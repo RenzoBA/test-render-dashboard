@@ -5,7 +5,7 @@ import React, { ChangeEvent, FormEvent, useState } from "react";
 
 type Props = {};
 
-const page = (props: Props) => {
+const DashboardPage = (props: Props) => {
   const { user, setUser } = useMyContext();
   const [newUserName, setNewUserName] = useState<string>("");
 
@@ -34,4 +34,4 @@ const page = (props: Props) => {
   );
 };
 
-export default page;
+export default DashboardPage;

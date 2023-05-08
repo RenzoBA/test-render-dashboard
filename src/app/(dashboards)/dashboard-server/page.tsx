@@ -21,7 +21,7 @@ const page = async (props: Props) => {
       <h2>dashboard page</h2>
       <div>
         {posts.map((post) => (
-          <div>{post.title}</div>
+          <div key={post.id}>{post.title}</div>
         ))}
       </div>
     </div>
