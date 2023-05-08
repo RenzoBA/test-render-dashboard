@@ -5,9 +5,9 @@ import React from "react";
 
 type Props = {};
 
-const page = (props: Props) => {
+const OptionsPage = (props: Props) => {
   const { user } = useMyContext();
   return <div>options page: {user.name}</div>;
 };
 
-export default page;
+export default OptionsPage;
