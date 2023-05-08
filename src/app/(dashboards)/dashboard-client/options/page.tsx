@@ -1,11 +1,13 @@
 "use client";
 
+import { useMyContext } from "@/context/my-context";
 import React from "react";
 
 type Props = {};
 
 const page = (props: Props) => {
-  return <div>options page</div>;
+  const { user } = useMyContext();
+  return <div>options page: {user.name}</div>;
 };
 
 export default page;
